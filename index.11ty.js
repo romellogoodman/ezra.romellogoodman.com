@@ -14,8 +14,12 @@ const renderPages = (data) => {
   const pageList = [introduction, ...interviews];
   const pageCotent = pageList.map((page, index) => {
     return `
-      <div class="page">
-        ${page._templateContent}
+      <div class="page ${index === pageList.length - 1 ? 'last-page' : ''}">
+        ${page.data?.title ? `<h1>${page.data.title}</h1>` : ''}
+        ${page.data?.authors ? `<p>${page.data.authors.join(', ')}</p>` : ''}
+        ${page.data?.date ? `<p>${page.data.date}</p>` : ''}
+        <div class="bar" />
+        ${page.templateContent}
       </div>
     `;
   }).join('\n');
@@ -44,8 +48,9 @@ const binderyHTML = (data) => `
         Bindery.makeBook({
           content: "#content",
           rules: [
-            Bindery.PageBreak({ selector: ".title-page", position: "after" }),
+            Bindery.PageBreak({ selector: ".title-page", position: "after",  }),
             Bindery.PageBreak({ selector: ".page", position: "before", continue: "left"  }),
+            Bindery.PageBreak({ selector: ".last-page", position: "after",  }),
           ],
           pageSetup: {
             size: { width: '4.25in', height: '6.875in' },

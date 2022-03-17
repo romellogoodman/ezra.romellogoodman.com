@@ -1,5 +1,8 @@
 ---
 title: Two Acclaimed Writers on the Art of Revising Your Life
+authors:
+  - Ezra Klein
+  - Guest tk
 description: Kiese Laymon and Tressie McMillan Cottom on vulnerability, revision and love.
 publish_date: November 9, 2021
 url: https://www.nytimes.com/2021/11/09/podcasts/transcript-ezra-klein-show-kiese-laymon.html
