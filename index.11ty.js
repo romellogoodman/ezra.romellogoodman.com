@@ -45,22 +45,6 @@ const binderyHTML = (data) => `
           rules: [
             Bindery.PageBreak({ selector: ".title-page", position: "after" }),
             Bindery.PageBreak({ selector: ".page", position: "before", continue: "left"  }),
-            Bindery.RunningHeader({
-              render: (pageInfo) => {
-                const isRightHandPage = pageInfo.number % 2 !== 0;
-
-                // if (pageInfo.number === 1) {
-                //   return \`
-                //     <div class="running-header">
-                //       <div class="box rainbow-box"></div>
-                //       <p>From the Collection of Aubrie & Romello</p>
-                //     </div>
-                //   \`;
-                // }
-
-                return "";
-              }
-            }),
           ],
           pageSetup: {
             size: { width: '4.25in', height: '6.875in' },
