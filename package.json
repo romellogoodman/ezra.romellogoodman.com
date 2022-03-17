@@ -1,0 +1,11 @@
+{
+  "name": "ezra.romellogoodman.com",
+  "private": true,
+  "scripts": {
+    "dev": "eleventy --formats=11ty.js,md --serve --port=3000",
+    "build": "eleventy --formats=11ty.js,md"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^1.0.0"
+  }
+}
