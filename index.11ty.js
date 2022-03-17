@@ -12,6 +12,8 @@ const renderPages = (data) => {
   const interviews = allPages.filter(page => !['', 'README', 'introduction'].includes(page.fileSlug));
   const introduction = allPages.find(page => page.fileSlug === "introduction");
   const pageCotent = [introduction, ...interviews].map(page => {
+    console.log(page._templateContent)
+
     return `
       <div class="page">
         ${page._templateContent}
