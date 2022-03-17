@@ -8,12 +8,11 @@ const renderTitle = () => {
 };
 
 const renderPages = (data) => {
-  const allPages = data.collections.all || []
+  const allPages = data.collections.all || [];
   const interviews = allPages.filter(page => !['', 'README', 'introduction'].includes(page.fileSlug));
   const introduction = allPages.find(page => page.fileSlug === "introduction");
-  const pageCotent = [introduction, ...interviews].map(page => {
-    console.log(page._templateContent)
-
+  const pageList = [introduction, ...interviews];
+  const pageCotent = pageList.map((page, index) => {
     return `
       <div class="page">
         ${page._templateContent}
