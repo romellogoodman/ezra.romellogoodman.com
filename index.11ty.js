@@ -36,7 +36,7 @@ const renderTitle = (data) => {
     <div class="title-page">
       <h1>Ezra Reader</h1>
       <h3>Transcripts from the Ezra Klein Show</h3>
-      ${renderNotch(data)}
+      ${renderNotch()}
     </div>
   `;
 };
@@ -45,7 +45,7 @@ const renderCover = (data) => {
     return `
     <div class="cover-page">
       <h3>Designed by Romello Goodman</h3>
-      ${renderNotch(data)}
+      ${renderNotch()}
       <p>
         This is an open-source artbook.
        </p>
@@ -65,9 +65,26 @@ const renderCover = (data) => {
   `;
 }
 
-const renderNotch = (data) => {
+const renderNotch = (colors = ['Black']) => {
+
+  // Tried a gradient notch
+  // if (colors.length > 1) {
+  //   return ` 
+  //     <svg class="notch">
+  //       <linearGradient id="gradient" gradientTransform="rotate(90)">
+  //         ${colors.map((col, index) => {
+  //           const percent = Math.floor(100 / colors.length) * (index + 1);
+
+  //           return `<stop offset="${percent}%"  stop-color="${col}" />`;
+  //         })}
+  //       </linearGradient>
+  //       <rect x="0" y="0" height="100%" width="100%" fill="url('#gradient')" />
+  //     </svg>
+  //   `;
+  // }
+
   return html`
-    <div class="notch" style="background: teal;"></div>
+    <div class="notch" style="background: ${colors[0]};"></div>
   `
 }
 
@@ -122,7 +139,7 @@ const renderPages = (data) => {
             `).join(', ')}
           </svg>
         ` : ''}
-        ${renderNotch(data)}
+        ${renderNotch(page.data.authors.map(({color}) => color))}
         ${renderInterview(page.templateContent, page.data)}
       </div>
     `;
