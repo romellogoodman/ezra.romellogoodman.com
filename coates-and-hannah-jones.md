@@ -3,7 +3,7 @@ title: Nikole Hannah-Jones and Ta-Nehisi Coates on the Fight Over U.S. History
 authors:
   - name: EZRA KLEIN
     shortName: EK
-    color: Black
+    color: LightGray
   - name: NIKOLE HANNAH-JONES
     shortName: NHJ
     color: Teal

@@ -3,7 +3,7 @@ title: Introduction
 authors:
   - name: ROMELLO GOODMAN
     shortName: MG
-    color: Yellow
+    color: MediumAquaMarine
 publish_date: 2021 - 
 ---
 

@@ -3,7 +3,7 @@ title: N.K. Jemisin’s master class in world building
 authors:
   - name: EZRA KLEIN
     shortName: EK
-    color: Black
+    color: LightGray
   - name: NK Jemisin
     shortName: NK
     color: Ruby

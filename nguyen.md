@@ -3,7 +3,7 @@ title: Are We Measuring Our Lives in All the Wrong Ways?
 authors:
   - name: EZRA KLEIN
     shortName: EK
-    color: Black
+    color: LightGray
   - name: C. THI NGUYEN
     shortName: CTN
     color: Teal

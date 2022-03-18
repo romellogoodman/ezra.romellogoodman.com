@@ -3,7 +3,7 @@ title: Critical Race Theory, Comic Books and the Power of Public Schools
 authors:
   - name: EZRA KLEIN
     shortName: EK
-    color: Black
+    color: LightGray
   - name: EVE EWING
     shortName: Eve Ewing
     color: FireBrick
