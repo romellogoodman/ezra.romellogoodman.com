@@ -10,9 +10,9 @@ publish_date: July 9, 2021
 url: https://www.nytimes.com/2021/07/09/podcasts/transcript-ezra-klein-interviews-eve-ewing.html
 ---
 
-EZRA KLEIN: I’m Ezra Klein, and this is “The Ezra Klein Show.”
-
 [MUSIC PLAYING]
+
+EZRA KLEIN: I’m Ezra Klein, and this is “The Ezra Klein Show.”
 
 I’m always fascinated by people able to do great work across very different mediums. Eve Ewing is a signal example of this. She’s a sociologist at the University of Chicago, where her work focuses on the intersection of race, and education, and democracy. She wrote this great book a couple of years back, “Ghosts in the Schoolyard,” which is about the closing of some Chicago Public Schools.
 

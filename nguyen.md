@@ -10,9 +10,9 @@ publish_date: February 25, 2022
 url: https://www.nytimes.com/2022/02/25/podcasts/transcript-ezra-klein-interviews-c-thi-nguyen.html
 ---
 
-[MUSIC PLAYING] EZRA KLEIN: I’m Ezra Klein, and this is “The Ezra Klein Show.”
+[MUSIC PLAYING] 
 
-[MUSIC PLAYING]
+EZRA KLEIN: I’m Ezra Klein, and this is “The Ezra Klein Show.”
 
 When our editor Rogé Karma joined the show years ago now, he won my heart by writing up this typology of our episodes. And one of them was called “A New Lens.” These were the shows where you walk away with a new lens through which to see the world. Not, of course, the only possible lens. Maybe not even the most correct one. But one that illuminates new facets of life. One that makes the invisible visible, that you almost can’t help seeing through after you hear it. And this is that kind of show.
 

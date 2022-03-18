@@ -13,9 +13,9 @@ publish_date: July 30, 2021
 url: https://www.nytimes.com/2021/07/30/podcasts/transcript-ezra-klein-interviews-ta-nehisi-coates-and-nikole-hannah-jones.html
 ---
 
-EZRA KLEIN: I’m Ezra Klein, and this is “The Ezra Klein Show.”
-
 [MUSIC PLAYING]
+
+EZRA KLEIN: I’m Ezra Klein, and this is “The Ezra Klein Show.”
 
 So before we get started today, we’re going to be doing an Ask Me Anything episode. So if you’ve got questions you would like to hear me answer on the show, send them to ezrakleinshow@nytimes.com. Again, that is ezrakleinshow@nytimes.com.
 
