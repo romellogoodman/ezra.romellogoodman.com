@@ -72,7 +72,8 @@ const renderNotch = (data) => {
 }
 
 const renderInterview = (content, interview) => {
-  let processedContent = content;
+  // Copy string
+  let processedContent = content.slice();
 
   console.log('interview', content);
   console.log('content 2', content.replaceAll);
