@@ -74,8 +74,10 @@ const renderNotch = (data) => {
 const renderInterview = (content, interview) => {
   let processedContent = content;
 
-  console.log('content', content.replaceAll);
-  console.log('processedContent', processedContent.replaceAll);
+  console.log('interview', content);
+  console.log('content 2', content.replaceAll);
+  console.log('processedContent', processedContent);
+  console.log('processedContent 2', processedContent.replaceAll);
   
   interview.authors.forEach((author) => {
     // processedContent = processedContent.replaceAll(author, 'HELLO WORLD')
