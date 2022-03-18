@@ -73,6 +73,8 @@ const renderNotch = (data) => {
 
 const renderInterview = (content, interview) => {
   let processedContent = content;
+
+  console.log('processedContent', processedContent.replaceAll);
   
   interview.authors.forEach((author) => {
     // processedContent = processedContent.replaceAll(author, 'HELLO WORLD')
@@ -81,7 +83,7 @@ const renderInterview = (content, interview) => {
         <em>[${cue}]</em>
       </div>
     `;
-    
+
     processedContent = processedContent.replaceAll(/.*?\[LAUGHTER].*/g, getCueHTML('LAUGHTER'));
     processedContent = processedContent.replaceAll(/.*?\[MUSIC PLAYING].*/g, getCueHTML('MUSIC PLAYING'));
     processedContent = processedContent.replaceAll(`${author.name}:`, html`
