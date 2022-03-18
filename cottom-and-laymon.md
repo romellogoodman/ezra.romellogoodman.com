@@ -4,7 +4,7 @@ authors:
   - name: KIESE LAYMON
     shortName: Kiese Laymon
   - name: TRESSIE MCMILLAN COTTOM
-  shortName: Tressie McMillan Cottom
+    shortName: Tressie McMillan Cottom
 description: Kiese Laymon and Tressie McMillan Cottom on vulnerability, revision and love.
 publish_date: November 9, 2021
 url: https://www.nytimes.com/2021/11/09/podcasts/transcript-ezra-klein-show-kiese-laymon.html
