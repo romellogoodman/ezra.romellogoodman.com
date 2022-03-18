@@ -1,8 +1,13 @@
 ---
 title: Nikole Hannah-Jones and Ta-Nehisi Coates on the Fight Over U.S. History
 authors:
-  - Ezra Klein
-  - Guest tk
+  - name: EZRA KLEIN
+    shortName: EK
+  - name: NIKOLE HANNAH-JONES
+    shortName: NHJ
+  - name: TA-NEHISI COATES
+    shortName: TNC
+
 description: The award-winning writers discuss the 1619 Project, American democracy and Donald Trump.
 publish_date: July 30, 2021
 url: https://www.nytimes.com/2021/07/30/podcasts/transcript-ezra-klein-interviews-ta-nehisi-coates-and-nikole-hannah-jones.html

@@ -1,8 +1,10 @@
 ---
 title: Critical Race Theory, Comic Books and the Power of Public Schools
 authors:
-  - Ezra Klein
-  - Guest tk
+  - name: EZRA KLEIN
+    shortName: EK
+  - name: EVE EWING
+    shortName: Eve Ewing
 description: The sociologist, poet and Marvel Comics writer Eve Ewing helps us envision a better world.
 publish_date: July 9, 2021
 url: https://www.nytimes.com/2021/07/09/podcasts/transcript-ezra-klein-interviews-eve-ewing.html

@@ -1,8 +1,13 @@
 ---
 title: Introduction
 authors:
-  - Romello Goodman
+  - name: Romello Goodman
+  - shortName: MG
 publish_date: 2021 - 
 ---
 
-Introduction tk.
+[MUSIC PLAYING]
+
+MG: Introduction tk.
+
+[MUSIC PLAYING]

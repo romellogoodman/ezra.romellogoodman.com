@@ -1,8 +1,10 @@
 ---
 title: Are We Measuring Our Lives in All the Wrong Ways?
 authors:
-  - Ezra Klein
-  - Guest tk
+  - name: EZRA KLEIN
+    shortName: EK
+  - name: C. THI NGUYEN
+    shortName: CTN
 description: The philosopher C. Thi Nguyen believes that to understand modern life, we need to understand how games work.
 publish_date: February 25, 2022
 url: https://www.nytimes.com/2022/02/25/podcasts/transcript-ezra-klein-interviews-c-thi-nguyen.html
