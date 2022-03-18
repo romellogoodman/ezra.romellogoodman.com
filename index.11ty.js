@@ -76,6 +76,14 @@ const renderInterview = (content, interview) => {
   
   interview.authors.forEach((author) => {
     // processedContent = processedContent.replaceAll(author, 'HELLO WORLD')
+    const getCueHTML = cue => html`
+      <div>
+        <em>[${cue}]</em>
+      </div>
+    `;
+    
+    processedContent = processedContent.replaceAll(/.*?\[LAUGHTER].*/g, getCueHTML('LAUGHTER'));
+    processedContent = processedContent.replaceAll(/.*?\[MUSIC PLAYING].*/g, getCueHTML('MUSIC PLAYING'));
     processedContent = processedContent.replaceAll(`${author.name}:`, html`
       <span style="color: teal;">
         <strong>
@@ -103,7 +111,7 @@ const renderPages = (data) => {
         ${page.data?.authors ? `<p>${page.data.authors.map(({name}) => name).join(', ')}</p>` : ''}
         ${page.data?.date ? `<p>${page.data.date}</p>` : ''}
         ${renderNotch(data)}
-        ${renderInterview(page.templateContent, {authors: processedAuthors, ...page.data})}
+        ${renderInterview(page.templateContent, page.data)}
       </div>
     `;
   }).join('\n');
