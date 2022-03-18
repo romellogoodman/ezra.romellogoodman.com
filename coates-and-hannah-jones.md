@@ -3,10 +3,13 @@ title: Nikole Hannah-Jones and Ta-Nehisi Coates on the Fight Over U.S. History
 authors:
   - name: EZRA KLEIN
     shortName: EK
+    color: Black
   - name: NIKOLE HANNAH-JONES
     shortName: NHJ
+    color: Teal
   - name: TA-NEHISI COATES
     shortName: TNC
+    color: Teal
 
 description: The award-winning writers discuss the 1619 Project, American democracy and Donald Trump.
 publish_date: July 30, 2021

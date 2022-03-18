@@ -1,13 +1,14 @@
 ---
 title: Introduction
 authors:
-  - name: Romello Goodman
-  - shortName: MG
+  - name: ROMELLO GOODMAN
+    shortName: MG
+    color: Yellow
 publish_date: 2021 - 
 ---
 
 [MUSIC PLAYING]
 
-MG: Introduction tk.
+ROMELLO GOODMAN: Introduction tk.
 
 [MUSIC PLAYING]

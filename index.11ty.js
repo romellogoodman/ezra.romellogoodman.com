@@ -115,9 +115,22 @@ const renderPages = (data) => {
 
     return `
       <div class="interview-page ${isFirstInterview} ${isLastInterview}">
-        ${page.data?.title ? `<h1>${page.data.title}</h1>` : ''}
-        ${page.data?.authors ? `<p>${page.data.authors.map(({name}) => name).join(', ')}</p>` : ''}
-        ${page.data?.date ? `<p>${page.data.date}</p>` : ''}
+        ${page.data?.title ? html`
+          <h1>${page.data.title}</h1>
+        ` : ''}
+        ${page.data?.authors ? html`
+          <p>${page.data.authors.map(({name}) => name).join(', ')}</p>
+        ` : ''}
+        ${page.data?.date ? html`
+          <p>${page.data.date}</p>
+        ` : ''}
+        ${page.data?.authors ? html`
+          <svg height="10pt" width="${10 * page.data.authors.length}pt">
+            ${page.data.authors.map(({color}, index) => html`
+              <circle cx="${50 + 25 * index}%" cy="50%" r="25%" fill="${color}"></circle>
+            `).join(', ')}
+          </svg>
+        ` : ''}
         ${renderNotch(data)}
         ${renderInterview(page.templateContent, page.data)}
       </div>
