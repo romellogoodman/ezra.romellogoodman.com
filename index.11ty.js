@@ -127,7 +127,12 @@ const renderPages = (data) => {
           <h1>${page.data.title}</h1>
         ` : ''}
         ${page.data?.authors ? html`
-          <p>${page.data.authors.map(({name}) => name).join(', ')}</p>
+          <h2 style="display: none">
+            ${page.data.authors.map(({shortName}) => shortName).join('-')}
+          </h2>
+          <p>
+            ${page.data.authors.map(({name}) => name).join(', ')}
+          </p>
         ` : ''}
         ${page.data?.date ? html`
           <p>${page.data.date}</p>
@@ -159,10 +164,15 @@ const js = (data) => javascript`
       Bindery.PageBreak({ selector: ".title-page", position: "after"}),
       Bindery.PageBreak({ selector: ".interview-page", position: "before" }),
       Bindery.PageBreak({ selector: ".cover-page", position: "before",  }),
+      Bindery.RunningHeader({
+        render: (pageInfo) => pageInfo.isLeft || pageInfo.number === 1
+          ? ''
+          : 'Ezra Reader ' + pageInfo.number
+      })
     ],
     pageSetup: {
       size: { width: '4.25in', height: '6.875in' },
-      margin: { top: '12pt', inner: '12pt', outer: '16pt', bottom: '20pt' },
+      margin: { top: '20pt', inner: '12pt', outer: '16pt', bottom: '20pt' },
     },
   });
 `;
