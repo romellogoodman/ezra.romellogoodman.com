@@ -73,12 +73,12 @@ const renderNotch = (data) => {
 
 const renderInterview = (content, interview) => {
   // Copy string
-  let processedContent = content.slice();
+  // let processedContent = content.slice();
 
   console.log('interview', content);
   console.log('content 2', content.replaceAll);
-  console.log('processedContent', processedContent);
-  console.log('processedContent 2', processedContent.replaceAll);
+  // console.log('processedContent', processedContent);
+  // console.log('processedContent 2', processedContent.replaceAll);
   
   interview.authors.forEach((author) => {
     // processedContent = processedContent.replaceAll(author, 'HELLO WORLD')
@@ -88,9 +88,9 @@ const renderInterview = (content, interview) => {
       </div>
     `;
 
-    processedContent = processedContent.replaceAll(/.*?\[LAUGHTER].*/g, getCueHTML('LAUGHTER'));
-    processedContent = processedContent.replaceAll(/.*?\[MUSIC PLAYING].*/g, getCueHTML('MUSIC PLAYING'));
-    processedContent = processedContent.replaceAll(`${author.name}:`, html`
+    content = content.replaceAll(/.*?\[LAUGHTER].*/g, getCueHTML('LAUGHTER'));
+    content = content.replaceAll(/.*?\[MUSIC PLAYING].*/g, getCueHTML('MUSIC PLAYING'));
+    content = content.replaceAll(`${author.name}:`, html`
       <span style="color: teal;">
         <strong>
           ${author.shortName}:
@@ -99,7 +99,7 @@ const renderInterview = (content, interview) => {
     `);
   });
 
-  return processedContent;
+  return content;
 }
 
 const renderPages = (data) => {
