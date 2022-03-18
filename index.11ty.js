@@ -83,7 +83,7 @@ const renderInterview = (content, interview) => {
 
     processedContent = processedContent.replace(/.*?\[LAUGHTER].*/g, getCueHTML('LAUGHTER'));
     processedContent = processedContent.replace(/.*?\[MUSIC PLAYING].*/g, getCueHTML('MUSIC PLAYING'));
-    processedContent = processedContent.replaceAll(`${author.name}:`, html`
+    processedContent = processedContent.replaceAll(new RegExp(`${author.name}:`, 'g'), html`
       <span style="color: ${author.color};">
         <strong>
           ${author.shortName}:
@@ -100,7 +100,7 @@ const renderPages = (data) => {
   const interviews = allPages.filter(page => !['', 'README', 'introduction'].includes(page.fileSlug));
   const introduction = allPages.find(page => page.fileSlug === "introduction");
   const pageList = [introduction, ...interviews];
-  const pageCotent = pageList.slice(0, 2).map((page, index) => {
+  const pageCotent = pageList.map((page, index) => {
     const isFirstInterview = index === 0 ? 'first-interview' : '';
     const isLastInterview = index === pageList.length - 1 ? 'last-interview' : '';
 
