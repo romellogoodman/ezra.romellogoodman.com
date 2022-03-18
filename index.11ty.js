@@ -107,6 +107,8 @@ const renderPages = (data) => {
     const isFirstInterview = index === 0 ? 'first-interview' : '';
     const isLastInterview = index === pageList.length - 1 ? 'last-interview' : '';
 
+    console.log('page.templateContent', page.templateContent);
+
     return `
       <div class="interview-page ${isFirstInterview} ${isLastInterview}">
         ${page.data?.title ? `<h1>${page.data.title}</h1>` : ''}
