@@ -100,7 +100,7 @@ const renderInterview = (content, interview) => {
 
     processedContent = processedContent.replace(/.*?\[LAUGHTER].*/g, getCueHTML('LAUGHTER'));
     processedContent = processedContent.replace(/.*?\[MUSIC PLAYING].*/g, getCueHTML('MUSIC PLAYING'));
-    processedContent = processedContent.replaceAll(new RegExp(`${author.name}:`, 'g'), html`
+    processedContent = processedContent.replace(new RegExp(`${author.name}:`, 'g'), html`
       <span style="color: ${author.color};">
         <strong>
           ${author.shortName}:
