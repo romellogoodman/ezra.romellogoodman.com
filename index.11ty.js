@@ -72,26 +72,19 @@ const renderNotch = (data) => {
 }
 
 const renderInterview = (content, interview) => {
-  // Copy string
-  // let processedContent = content.slice();
-
-  console.log('interview', content);
-  console.log('content 2', content.replaceAll);
-  // console.log('processedContent', processedContent);
-  // console.log('processedContent 2', processedContent.replaceAll);
+  let processedContent = content.slice();
   
   interview.authors.forEach((author) => {
-    // processedContent = processedContent.replaceAll(author, 'HELLO WORLD')
     const getCueHTML = cue => html`
       <div>
         <em>[${cue}]</em>
       </div>
     `;
 
-    content = content.replaceAll(/.*?\[LAUGHTER].*/g, getCueHTML('LAUGHTER'));
-    content = content.replaceAll(/.*?\[MUSIC PLAYING].*/g, getCueHTML('MUSIC PLAYING'));
-    content = content.replaceAll(`${author.name}:`, html`
-      <span style="color: teal;">
+    processedContent = processedContent.replace(/.*?\[LAUGHTER].*/g, getCueHTML('LAUGHTER'));
+    processedContent = processedContent.replace(/.*?\[MUSIC PLAYING].*/g, getCueHTML('MUSIC PLAYING'));
+    processedContent = processedContent.replaceAll(`${author.name}:`, html`
+      <span style="color: ${author.color};">
         <strong>
           ${author.shortName}:
         </strong>
@@ -99,7 +92,7 @@ const renderInterview = (content, interview) => {
     `);
   });
 
-  return content;
+  return processedContent;
 }
 
 const renderPages = (data) => {
@@ -110,8 +103,6 @@ const renderPages = (data) => {
   const pageCotent = pageList.slice(0, 2).map((page, index) => {
     const isFirstInterview = index === 0 ? 'first-interview' : '';
     const isLastInterview = index === pageList.length - 1 ? 'last-interview' : '';
-
-    console.log('page.templateContent', page.templateContent);
 
     return `
       <div class="interview-page ${isFirstInterview} ${isLastInterview}">
